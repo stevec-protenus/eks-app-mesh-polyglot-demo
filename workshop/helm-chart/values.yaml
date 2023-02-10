@@ -61,7 +61,7 @@ detail:
 
   env:
     - name: AWS_XRAY_DAEMON_ADDRESS
-      value: xray-service.default:3.00
+      value: xray-service.default:3000
       
   resources:
     limits:
@@ -154,7 +154,7 @@ catalog:
     - name: AGG_APP_URL
       value: "http://proddetail.workshop:3000/catalogDetail"
     - name: AWS_XRAY_DAEMON_ADDRESS
-      value: xray-service.default:3.00
+      value: xray-service.default:3000
     - name: DATABASE_SERVICE_URL
       value: mysql.workshop
       
@@ -245,7 +245,7 @@ frontend:
     - name: BASE_URL
       value: "http://prodcatalog.workshop:5000/products/"
     - name: AWS_XRAY_DAEMON_ADDRESS
-      value: xray-service.default:3.00
+      value: xray-service.default:3000
     
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
